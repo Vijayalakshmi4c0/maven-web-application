@@ -30,6 +30,7 @@ stage('UploadArtifactsIntoNexus')
 {
 sh "${mavenHome}/bin/mvn clean deploy"
 }
+/*
 stage ('DeployAppIntoTomcat')
 {
 sshagent(['4bba0b38-341e-4a51-b6c9-451be5dd3a84']) {
@@ -42,5 +43,5 @@ emailext body: '''Build is over.
 Regards,
 Vijayalakshmi.''', subject: 'Build is over', to: 'vijjiabi@gmail.com'
 }
-
+*/
 }
