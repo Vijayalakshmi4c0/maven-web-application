@@ -21,12 +21,12 @@ stage('Build')
 {
 sh "${mavenHome}/bin/mvn clean package"
 }
-/*
+
 stage('SonarQubeReortExecution')
 {
 sh "${mavenHome}/bin/mvn sonar:sonar"
 }
-
+/*
 stage('UploadArtifactsIntoNexus')
 {
 sh "${mavenHome}/bin/mvn clean deploy"
